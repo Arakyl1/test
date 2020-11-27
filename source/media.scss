@@ -1,0 +1,193 @@
+@media (max-width: 1024px){
+    body{
+        font-size: 14px;
+    }
+    section .container{
+        padding: 76px 32px;
+        width: auto;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+    
+    .main-content .main-content_item{
+        max-width: 100%;
+        &:nth-child(4n+4),&:nth-child(4n+3){
+            .item-main{
+                flex-direction: row;
+                .item-content{
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    .main-content .main-content_item .item-main .item-content h2{
+        font-size: 18px;
+        line-height: 25px;
+        margin: 20px auto 4px;
+    }
+ 
+    //form style
+    section.form .container{
+        padding: 0 32px;
+        h1{
+            font-size: 36px;
+        line-height: 43px;
+        }
+    }
+
+    .form-content{
+        .colym-2{
+            grid-column: 2/3; 
+            grid-row: 1/2;
+
+          }
+          .colym-3{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-top: 32px;
+          }
+          .colym-1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            padding-right: 18px;
+          }
+    }
+    .form-content .colym-2{
+        padding: 24px 16px;
+        span.text-span{
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        p.month{
+             margin-bottom: 24px;
+             font-size: 16px;
+             line-height: 13px;
+             transform: translateY(-15px);
+        }
+    }
+    
+  
+    .form-content .colym-3 form button.button-subscribe{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .form-content .colym-2 .price p.price-number{
+        font-size: 32px;
+        line-height: 36px;
+        vertical-align: top;
+        margin-right: 16px;
+    }
+    .form-content .colym-2 .price p.price-discout{
+        padding: 10px 20px;
+    }
+    .form-content .colym-2 span.past-prise_span, .form-content .colym-2 .price p.price-discout span{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .form-content .colym-2 p.past-prese, .form-content .colym-1 p.form-text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .form-content .colym-1 p.form-date, .form-content .colym-1 p.form-seats{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .form-content .colym-2 .price p.price-discout{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+}
+@media (max-width: 620px){
+    body{
+        font-size: 12px;
+    }
+    section .container{
+        padding: 76px 24px;
+        h1{
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    .main-content .main-content_item:nth-child(4n+3) .item-main, 
+    .main-content .main-content_item:nth-child(4n+4) .item-main{
+        flex-direction: column-reverse;
+    }
+    .main-content .main-content_item:nth-child(4n+3) .item-main .item-content,
+     .main-content .main-content_item:nth-child(4n+4) .item-main .item-content{
+         padding: 0;
+     }
+    .main-content .main-content_item{
+        margin-bottom: 48px;
+        .item-main{
+            flex-direction: column-reverse;
+            img{
+                width: 100%;
+            }
+            .item-content{
+                padding: 0;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .main-content .main-content_item .item-main .item-content h2{
+        font-size: 14px;
+        line-height: 20px;
+        margin: 16px auto 0;
+        
+    }
+    .main-content .main-content_item .item-main .item-content::before{
+        height: 1px;
+    }
+    .main-content{
+        margin-top: 34px;
+    }
+    
+    //form style
+    section.form .container{
+        width: auto;
+        padding: 76px 20px;
+        h1{
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    .form-content{
+        margin-top: 48px;
+        width: auto;
+       display: block;
+}
+.form-content .colym-1 p.form-date,.form-content .colym-1 p.form-seats{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+.form-content .colym-1 p.form-text{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.form-content .colym-2 span.text-span{
+    font-size: 12px;
+    line-height: 20px;
+}
+.form-content .colym-2 .price p.price-number{
+    font-size: 30px;
+}
+.form-content .colym-2 .price p.price-discout{
+    font-size: 14px;
+    line-height: 20px;
+}
+.form-content .colym-2 .price p.price-discout span, .form-content .colym-2 span.past-prise_span{
+    font-size: 8px;
+    line-height: 11px;
+}
+.form-content .colym-2 p.month{
+    transform: translateY(-5px);
+}
+.form-content .colym-2 p.past-prese{
+    font-size: 24px;
+    line-height: 40px;
+}
+}
